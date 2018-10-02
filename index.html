@@ -6,9 +6,14 @@
         CSS dengan (id="" pada tag html) cara menggunakannya dengan menambahkan #(namaClass)
         CSS dengan (<link rel="stylesheet" href="">) dinamakan eksternal CSS-->
         <link rel="stylesheet" href=" Assets/css/style.css">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
     </head>
     <body>
         <nav>
+            <div class="menu-mobile">
+                <a href="#">Menu</a>
+            </div>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">PRODUCT</a></li>
@@ -18,74 +23,77 @@
             </ul>
         </nav>
 
-        <section>
-            <div>
-                <img class="image" src="Assets/img/bnh.jpg" alt="Gambar Profil">
+        <section id="box-profile">
+            <div class="img-profile">
+                <div class="photo" style="background-image: url(Assets/img/aa.jpg);"></div>
                 <!--(../)untuk back 1 folder, alt untuk memberikan informasi tentang gambar jika koneksi lambat atau
                 ada error coding, style="" yang ada pada tag html dinamakan inline CSS-->
             </div>
-            <div>
+            <div class="description">
                 <h1>Aqil Jawadal Furqon</h1>
                 <p>Back End Programmer</p>
-                <a href="#">Contact</a>
-                <a href="#">Resume</a>
+                <a href="#" class="button 
+                bg-green">Contact</a>
+                <a href="#" class="button 
+                border-blue">Resume</a>
             </div>
-            <div>
-                <div>
-                    <p>Availability</p>
-                    <p>Full time</p>
+            <div class="information">
+                <div class="data">
+                    <p class="field">Availability</p>
+                    <p class="text-gray">Full time</p>
                 </div>
-                <div>
-                    <p>Age</p>
-                    <p>17</p>
+                <div class="data">
+                    <p class="field">Age</p>
+                    <p class="text-gray">17</p>
                 </div>
-                <div >
-                    <p>Location</p>
-                    <p>Pemalang, Jawa Tengah</p>
+                <div class="data">
+                    <p class="field">Location</p>
+                    <p class="text-gray">Pemalang, Jawa Tengah</p>
                 </div>
-                <div>
-                    <p>Years Experience</p>
-                    <p>6</p>
+                <div class="data">
+                    <p class="field">Years Experience</p>
+                    <p class="text-gray">6</p>
                 </div>
-                <div>
-                    <p>Email</p>
-                    <p>aqiljawadalfurqon@gmail.com</p>
+                <div class="data">
+                    <p class="field">Email</p>
+                    <p class="text-gray">aqiljawadalfurqon@gmail.com</p>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section id="input-form">
             <form method="#" action="#">
-                <div>
+                <div class="form">
                     <label>Name</label>
                     <input type="text" name="name" placeholder="Masukkan nama Anda">
                 </div>
         
-                <div>
+                <div class="form">
                     <label>Role</label>
                     <input type="text" name="role">
                 </div>
         
-                <div>
+                <div class="form">
                     <label>Availability</label>
                     <input type="text" name="availability">
                 </div>
         
-                <div>
+                <div class="form">
                     <label>Age</label>
                     <input type="number" name="age">
                 </div>
 
-                <div>
+                <div class="form">
                     <label>Location</label>
                     <input type="text" name="location">
                 </div>
 
-                <div>
+                <div class="form">
                     <label>Years Experience</label>
                     <input type="number" name="years">
                 </div>
-                <div>
-                    <input type="submit" name="submit" value="SUBMIT">
+                <div class="form">
+                    <input type="submit" name="submit" value="SUBMIT" class="bg-blue">
                 </div>
             </form>
         </section>
